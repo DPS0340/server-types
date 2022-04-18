@@ -7,6 +7,11 @@ export interface IResponse<T> extends IHolder<T> { }
 
 export type UnaryFunction<Input, Output> = (arg: Input) => Output
 
+export type Predicate<Input> = (arg: Input) => boolean;
+
+// Side effect & Returns mutated argument
+export type Action<Input> = (arg: Input) => Input;
+
 export interface IHandler<Input, Output> {
     // Same as UnaryFunction<Input, Output>, but much understandable signature
     handle(arg: Input): Output;

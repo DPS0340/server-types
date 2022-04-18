@@ -1,6 +1,12 @@
 {
-  "name": "display",
+  "name": "server-types",
   "version": "1.0.0",
-  "main": "src/main.ts",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node src/main.ts"
+  },
+  "devDependencies": {
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  }
 }
